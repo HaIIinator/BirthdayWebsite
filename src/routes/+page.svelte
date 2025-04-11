@@ -29,7 +29,7 @@
   let giftVisible = false;
 
   const generateCards = () => {
-    const pairs = 1;
+    const pairs = 12;
     const imageIds = Array.from({length: pairs}, (_, i) => i + 1);
     const duplicated = imageIds.flatMap(id => [id, id]);
     const shuffled = duplicated.sort(() => Math.random() - 0.5);
